@@ -15,10 +15,10 @@ def sqrt_0(c):
     #limit number of iterations too
     numiter = 0
 
-    while abs(res**2-c) > EPSILON and numiter<20:
+    while abs(res**2-c) > c*EPSILON and numiter<20:
         print res,abs(res**2-c)
         res = res/2.0 + c/(2.0*res) #newton raphson update
         numiter = numiter + 1
     return res, numiter
 
-print sqrt_0(20)
+print sqrt_0(12566443)
