@@ -3,7 +3,7 @@
 # We will try to implement a program to compute sqrt(c)
 
 #fungus
-EPSILON = 0.0
+EPSILON = 1e-15
 
 def sqrt_0(c):
     #trial solution
@@ -19,6 +19,6 @@ def sqrt_0(c):
         print res,abs(res**2-c)
         res = res/2.0 + c/(2.0*res) #newton raphson update
         numiter = numiter + 1
-    return res
+    return res, numiter
 
-print sqrt_0(2)
+print sqrt_0(20)
