@@ -52,5 +52,5 @@ plt.loglog(H,rel_Oh,label='Order h')
 plt.loglog(H,rel_Oh2,label='Order h^2')
 plt.loglog(H,rel_Oh4,label='Order h^4')
 
-plt.legend(bbox_to_anchor=(1.,0.),loc=4,borderaxespad=0.)
+plt.legend(bbox_to_anchor=(0.,0.),loc=3,borderaxespad=0.)
 plt.show()
